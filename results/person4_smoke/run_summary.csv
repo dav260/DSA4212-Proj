@@ -1,0 +1,3 @@
+run_id,experiment,function,algorithm,D,d,seed,best_value,n_evals,total_runtime_seconds,termination_reason
+P4_Ellipsoid_D20_d2_GP-BO_seed0,person4_ellipsoid_effective,Ellipsoid,GP-BO,20,2,0,11.116702068825001,12,0.07994889999963561,budget_exhausted
+P4_Ellipsoid_D20_d2_CMA-ES_seed0,person4_ellipsoid_effective,Ellipsoid,CMA-ES,20,2,0,26.473522257675075,12,0.006011799999669165,budget_exhausted_partial_generation
