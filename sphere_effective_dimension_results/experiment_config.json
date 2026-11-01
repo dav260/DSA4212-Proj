@@ -1,0 +1,62 @@
+{
+    "experiment": "E3",
+    "function": "Sphere",
+    "ambient_dimension": 20,
+    "effective_dimensions": [
+        2,
+        5,
+        10,
+        20
+    ],
+    "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+    ],
+    "bounds": [
+        -5.0,
+        5.0
+    ],
+    "budget": 100,
+    "optimum_relevant_coordinates": 1.0,
+    "bo": {
+        "surrogate": "GaussianProcess",
+        "kernel": "Matern",
+        "kernel_nu": 2.5,
+        "acquisition": "EI",
+        "acquisition_optimizer": "sampling",
+        "n_initial_points": 10,
+        "n_restarts_optimizer": 0,
+        "noise": "noise-free"
+    },
+    "cma_es": {
+        "initial_mean": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "sigma0": 2.0,
+        "population_size": null,
+        "boundary_handling": "BoundTransform",
+        "restart_strategy": "none"
+    }
+}
