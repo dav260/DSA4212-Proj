@@ -1,0 +1,46 @@
+{
+  "pilot_config": {
+    "D": 20,
+    "effective_dimensions": [
+      2,
+      5,
+      10,
+      20
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "budget": 100,
+    "lower_bound": -5.0,
+    "upper_bound": 5.0,
+    "bo_initial_points": 10,
+    "bo_kernel": "ConstantKernel * Matern(nu=2.5, ARD=True)",
+    "bo_gp_alpha": 1e-06,
+    "bo_lengthscale_min": 0.1,
+    "bo_lengthscale_max": 10.0,
+    "bo_hyperparam_refit_interval": 10,
+    "bo_gp_optimizer_restarts": 0,
+    "bo_ei_xi": 0.0,
+    "bo_acq_random_candidates": 256,
+    "bo_acq_local_starts": 1,
+    "bo_acq_local_maxiter": 15,
+    "cma_initial_mean": 0.0,
+    "cma_sigma0": 2.0,
+    "cma_popsize": 10,
+    "cma_boundary_handling": "pycma bounds / default BoundTransform",
+    "cma_partial_generation": "Evaluate remaining points; do not tell partial generation"
+  },
+  "packages": {
+    "python": "3.14.10",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "cma": "4.5.0"
+  },
+  "comparability_note": "Share the same optimiser implementations and settings across all four members."
+}
