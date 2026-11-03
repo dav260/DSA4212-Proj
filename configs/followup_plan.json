@@ -1,0 +1,58 @@
+{
+  "budget": {
+    "budgets": [
+      250,
+      500
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "kernel": "ard",
+    "algorithms": [
+      "bo",
+      "cma"
+    ]
+  },
+  "robustness": {
+    "budget": 100,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "kernels": [
+      "isotropic"
+    ],
+    "algorithms": [
+      "bo"
+    ]
+  },
+  "extension": {
+    "budget": 100,
+    "seeds": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "kernel": "ard",
+    "algorithms": [
+      "bo",
+      "cma"
+    ]
+  },
+  "experiments": [
+    "sphere_full",
+    "ellipsoid_full",
+    "sphere_effective",
+    "ellipsoid_effective"
+  ],
+  "note": "New files only; uses existing src package. Existing 100-budget ARD pilot is the robustness reference. No existing files are modified."
+}
