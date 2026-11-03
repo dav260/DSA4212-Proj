@@ -1,0 +1,48 @@
+{
+  "experiment": "ellipsoid_effective",
+  "objective": "ellipsoid",
+  "D": 20,
+  "d": 10,
+  "irrelevant": 10,
+  "algorithm": "bo",
+  "seed": 4,
+  "budget": 100,
+  "kernel": "isotropic",
+  "config": {
+    "budget": 100,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "lower": -5.0,
+    "upper": 5.0,
+    "initial_points": 8,
+    "candidates": 512,
+    "local_starts": 2,
+    "local_maxiter": 35,
+    "hyper_interval": 10,
+    "alpha": 1e-06,
+    "xi": 0.0,
+    "kernel": "isotropic",
+    "cma_sigma": 2.0
+  },
+  "termination_reason": "budget_exhausted",
+  "hyperparameter_refits_at_n": [
+    8,
+    18,
+    28,
+    38,
+    48,
+    58,
+    68,
+    78,
+    88,
+    98
+  ],
+  "evaluations": 100,
+  "best_so_far": 116.76537411919861,
+  "runtime_seconds": 72.62160109999968
+}
