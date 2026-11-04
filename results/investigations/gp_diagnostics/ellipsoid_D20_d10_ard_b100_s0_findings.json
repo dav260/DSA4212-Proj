@@ -1,0 +1,59 @@
+{
+  "objective": "ellipsoid",
+  "D": 20,
+  "d": 10,
+  "seed": 0,
+  "budget": 100,
+  "kernel": "ard",
+  "final_best": 427.79734796898236,
+  "hyperparameter_refits": [
+    8,
+    18,
+    28,
+    38,
+    48,
+    58,
+    68,
+    78,
+    88,
+    98
+  ],
+  "top_improvements": [
+    {
+      "evaluation": 4,
+      "improvement": 1941.982799298458,
+      "best_so_far": 1241.7449652678372
+    },
+    {
+      "evaluation": 6,
+      "improvement": 295.90801166673486,
+      "best_so_far": 738.2702143125507
+    },
+    {
+      "evaluation": 5,
+      "improvement": 207.56673928855162,
+      "best_so_far": 1034.1782259792856
+    },
+    {
+      "evaluation": 9,
+      "improvement": 196.56032268994534,
+      "best_so_far": 541.7098916226054
+    },
+    {
+      "evaluation": 42,
+      "improvement": 65.70004730762275,
+      "best_so_far": 476.0098443149826
+    },
+    {
+      "evaluation": 53,
+      "improvement": 30.3774808628703,
+      "best_so_far": 427.79734796898236
+    },
+    {
+      "evaluation": 47,
+      "improvement": 17.83501548312995,
+      "best_so_far": 458.17482883185266
+    }
+  ],
+  "note": "Length scales are descriptive, not proof of recovered variable relevance. GP fits are instrumented via temporary wrapper."
+}

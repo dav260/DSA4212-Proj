@@ -1,0 +1,49 @@
+{
+  "objective": "sphere",
+  "D": 20,
+  "d": 20,
+  "seed": 0,
+  "budget": 100,
+  "kernel": "ard",
+  "final_best": 102.62455862122894,
+  "hyperparameter_refits": [
+    8,
+    18,
+    28,
+    38,
+    48,
+    58,
+    68,
+    78,
+    88,
+    98
+  ],
+  "top_improvements": [
+    {
+      "evaluation": 2,
+      "improvement": 49.106305916883485,
+      "best_so_far": 180.64201417317727
+    },
+    {
+      "evaluation": 6,
+      "improvement": 41.79119165634171,
+      "best_so_far": 128.02367149535579
+    },
+    {
+      "evaluation": 28,
+      "improvement": 21.884268089837292,
+      "best_so_far": 102.62455862122894
+    },
+    {
+      "evaluation": 3,
+      "improvement": 10.827151021479779,
+      "best_so_far": 169.8148631516975
+    },
+    {
+      "evaluation": 23,
+      "improvement": 3.5148447842895507,
+      "best_so_far": 124.50882671106623
+    }
+  ],
+  "note": "Length scales are descriptive, not proof of recovered variable relevance. GP fits are instrumented via temporary wrapper."
+}
