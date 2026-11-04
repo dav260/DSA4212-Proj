@@ -1,0 +1,38 @@
+{
+  "experiment": "sphere_full",
+  "objective": "sphere",
+  "D": 20,
+  "d": 20,
+  "irrelevant": 0,
+  "algorithm": "cma",
+  "seed": 7,
+  "budget": 100,
+  "kernel": "na",
+  "config": {
+    "budget": 100,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "lower": -5.0,
+    "upper": 5.0,
+    "initial_points": 8,
+    "candidates": 512,
+    "local_starts": 2,
+    "local_maxiter": 35,
+    "hyper_interval": 10,
+    "alpha": 1e-06,
+    "xi": 0.0,
+    "kernel": "ard",
+    "cma_sigma": 2.0
+  },
+  "termination_reason": "budget_exhausted_partial_generation_no_tell",
+  "population_size": 12,
+  "completed_generations": 8,
+  "evaluations": 100,
+  "best_so_far": 29.043365536522312,
+  "runtime_seconds": 0.03427899999951478
+}
