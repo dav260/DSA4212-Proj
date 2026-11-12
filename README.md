@@ -75,6 +75,7 @@ Both optimisers share the same `Recorder` (`src/record.py`), which enforces the 
 │   │   └── reproducibility.py
 │   └── analysis/
 │       └── consolidate_results.py   # Validates and merges every phase
+        └── last_improvement.py 
 ├── notebooks/                  # One thin notebook per experiment family
 ├── tests/test_project.py       # Unit tests
 ├── results/                    # All outputs (see below)
@@ -173,10 +174,13 @@ python -m src.investigations.validate_archives                 # audit every CSV
 python -m src.investigations.compare_kernels                   # seed-matched ARD vs isotropic
 python -m src.investigations.gp_diagnostics --objective sphere --D 20 --d 20 --seed 0
 python -m src.investigations.reproducibility --objective sphere --algorithm bo [--rerun]
+python src/analysis/last_improvement.py                        # reproduce Table 4
 ```
  
 - `gp_diagnostics` re-runs one BO case while recording the fitted length scales and log-marginal-likelihood at every fit (via a temporary wrapper; the acquisition policy is unchanged). Length scales are descriptive and not proof that the relevant variables were identified.
 - `reproducibility` confirms that the `(20,20)` full and effective runs are bit-identical (all 5 seeds, for both BO and CMA-ES, on both objectives).
+- `last_improvement` reproduces Table 4 from the saved 500-evaluation GP-BO ARD traces (seeds 0–4). For each run, it identifies the final evaluation at which best_so_far strictly decreases, then calculates the median and maximum across five seeds. Results are saved to results/consolidated/last_improvement_table.csv. No optimisers are rerun.
+
 ### 5. Tests
  
 ```bash

@@ -1,0 +1,5 @@
+"Objective (D, d)",Median last improvement,Latest last improvement,Seed-level last improvements
+"Sphere (5, 5)",59,89,"[39, 59, 35, 59, 89]"
+"Sphere (10, 10)",89,99,"[99, 69, 89, 69, 89]"
+"Sphere (20, 2)",309,420,"[365, 225, 309, 420, 225]"
+"Ellipsoid (20, 2)",313,433,"[269, 433, 192, 423, 313]"
